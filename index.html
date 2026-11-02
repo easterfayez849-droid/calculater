@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A clean responsive calculator built with HTML, CSS and JavaScript.">
+  <title>Count — Calculator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="Count calculator home"><span class="brand-icon">∑</span> count<span class="brand-dot">.</span></a>
+      <span class="top-label">A SIMPLE TOOL FOR EVERYDAY MATH</span>
+      <span class="version">01 / CALCULATOR</span>
+    </header>
+
+    <section class="intro">
+      <div class="eyebrow"><span></span> SIMPLE. CLEAR. PRECISE.</div>
+      <h1>Numbers, <em>made easy.</em></h1>
+      <p>A thoughtfully designed calculator for your everyday calculations.</p>
+    </section>
+
+    <section class="calculator-wrap" aria-label="Calculator">
+      <div class="calculator">
+        <div class="calc-top">
+          <span class="calc-brand">COUNT <span>STUDIO</span></span>
+          <span class="live-dot" aria-label="Ready"></span>
+        </div>
+        <div class="display" aria-live="polite">
+          <div class="expression" id="expression">Ready when you are</div>
+          <output class="result" id="result" aria-label="Calculator display">0</output>
+        </div>
+        <div class="keypad" id="keypad">
+          <button class="key utility" data-action="clear">AC</button>
+          <button class="key utility" data-action="delete" aria-label="Delete last digit">⌫</button>
+          <button class="key utility" data-action="percent">%</button>
+          <button class="key operator" data-value="÷" aria-label="Divide">÷</button>
+
+          <button class="key" data-value="7">7</button>
+          <button class="key" data-value="8">8</button>
+          <button class="key" data-value="9">9</button>
+          <button class="key operator" data-value="×" aria-label="Multiply">×</button>
+
+          <button class="key" data-value="4">4</button>
+          <button class="key" data-value="5">5</button>
+          <button class="key" data-value="6">6</button>
+          <button class="key operator" data-value="−" aria-label="Subtract">−</button>
+
+          <button class="key" data-value="1">1</button>
+          <button class="key" data-value="2">2</button>
+          <button class="key" data-value="3">3</button>
+          <button class="key operator" data-value="+" aria-label="Add">+</button>
+
+          <button class="key utility" data-action="sign">+/−</button>
+          <button class="key" data-value="0">0</button>
+          <button class="key" data-value=".">.</button>
+          <button class="key equals" data-action="equals">=</button>
+        </div>
+        <div class="calc-bottom"><span>KEYBOARD SUPPORTED</span><span>✳</span><span>MADE FOR CLARITY</span></div>
+      </div>
+      <aside class="side-note">
+        <div class="note-symbol">✳</div>
+        <h2>Less fuss.<br><em>More focus.</em></h2>
+        <p>Use the on-screen keys or your keyboard. Your calculations stay clear and easy to follow.</p>
+        <div class="shortcuts">
+          <span>QUICK SHORTCUTS</span>
+          <div><kbd>Enter</kbd><small>Calculate</small></div>
+          <div><kbd>Esc</kbd><small>Clear all</small></div>
+          <div><kbd>⌫</kbd><small>Delete</small></div>
+        </div>
+      </aside>
+    </section>
+
+    <footer><span>COUNT<span class="brand-dot">.</span></span><span>HTML · CSS · JAVASCRIPT</span><span>© 2026</span></footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
